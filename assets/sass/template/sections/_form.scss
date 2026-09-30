@@ -1,0 +1,322 @@
+
+.form-wrap1 {
+  box-shadow: 0px 5px 120px 0px rgba(39, 71, 125, 0.15);
+  .form-box,
+  .form-title-box {
+    padding: 60px;
+  }  
+}
+
+
+.form-wrap2 {
+  box-shadow: 0px 20px 60px 0px rgba(39, 71, 125, 0.07);
+  border-radius: 9999px;
+  padding: 45px;
+  background-color: $white-color;
+}
+
+.form-wrap3 {
+  --bs-gutter-x: 1rem;
+  padding: 80px 80px 80px 80px;
+}
+
+.form-style1 {
+  position: relative;
+  
+  i {
+    position: absolute;  
+    right: auto;
+    left: 40px;
+    font-size: 14px;
+    top: 23px;
+  }
+
+  input {
+    border: 2px solid $theme-color;
+    border-radius: 9999px;
+    padding-left: 65px;
+    color: $title-color;
+    font-size: 14px;
+    margin-right: 30px;
+
+    @include inputPlaceholder {
+      color: $title-color;
+    }
+
+    &:focus {
+      border-color: $theme-color;
+    }
+  }
+}
+
+.find-form1 {
+  margin-bottom: 50px;
+  
+  .form-text {
+    color: $title-color2;
+    margin: 0 0 27px 0;
+  }
+  
+  .form-group {
+    position: relative;
+    margin: 0;
+  }
+
+  input {
+    font-size: 14px;
+    color: $body-color2;
+    height: 62px;
+    border-radius: 9999px;
+    padding: 0 60px 0 40px;
+    border: 1px solid $theme-color4;
+    box-shadow: 10px 17.321px 24px 0px rgba(0, 0, 0, 0.03);
+
+    @include inputPlaceholder {
+      color: #757575;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: $theme-color4;
+    position: absolute;
+    right: 25px;
+    top: 18px;
+    font-size: 26px;
+
+    &:hover {
+      color: $theme-color2;
+    }
+  }
+}
+
+.subscribe-form1 {
+  overflow: hidden;
+
+  .form-inner {
+    background-color: $white-color;
+    position: relative;
+    padding: 20px 0 20px 45px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 99.98%;
+      top: 0;
+      bottom: 0;
+      width: 9999px;
+      background-color: inherit;
+    }
+  }
+
+  .form-title {
+    color: $title-color2;  
+    font-size: 20px;
+    margin: 0;
+    font-weight: 700;
+
+    i {
+      color: $theme-color2;
+      font-size: 40px;
+      vertical-align: middle;
+      margin-right: 20px;
+      margin-top: -4px;
+    }
+  }
+
+
+  .form-group {
+    display: flex;
+    margin: 0;
+    
+    input {
+      height: 55px;
+      font-size: 15px;
+      color: $title-color2;
+      border: 1px solid $theme-color4;
+      margin-right: 20px;
+      border-radius: 9999px;
+
+      @include inputPlaceholder {
+        color: $title-color2;
+      }
+    }
+  }
+}
+
+
+.booking-form1 {
+  padding: $space 0 0 100px;
+  max-width: 625px;
+
+  .form-select,
+  .form-control {
+    height: 64px;
+    border: 1px solid rgb(183, 183, 183);
+    background-color: $white-color;
+    background-image: none;
+    box-shadow: 10px 17.321px 24px 0px rgba(0, 0, 0, 0.03);    
+    border-radius: 9999px;
+
+    ~ i {
+      top: 13px;
+      height: 35px;
+      line-height: 35px;
+      display: inline-block;
+      padding-left: 20px;
+      border-left: 1px solid rgb(183, 183, 183);
+      color: #777777;
+      font-size: 24px;
+      padding-right: 3px;
+    }
+  }
+}
+
+
+.form-box-two{
+  position: relative;
+  border-radius: 10px;
+  background: #27477D;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.09);
+  padding: 60px 60px 40px;
+  margin-top: -125px;
+  @include xs{
+    padding: 60px 40px 40px;
+  }
+  @include vxs{
+    padding: 40px 30px 30px;
+  }
+  z-index: 99;
+  .form-group{
+    margin-bottom: 20px;
+    input{
+      height: 55px;
+      line-height: 55px;
+      color: var(--body-color);
+      border: 0;
+    }
+    i{
+      top: 20px;
+    }
+    button{
+      height: 55px;
+      line-height: 55px;
+      background-color: var(--theme-color);
+      color: var(--white-color);
+      font-weight: 700;
+      width: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: 50px;
+    }
+  }
+}
+
+@include ml {
+  .form-wrap3 {
+    padding: 60px 60px 60px 60px;
+  }
+
+}
+
+@include lg {
+  .form-wrap3 {
+    padding: 40px 40px 40px 40px;
+  }
+
+  .subscribe-form1 {
+    .form-title {
+      font-size: 16px;
+
+      i {
+        font-size: 28px;
+        margin-right: 15px;
+      }
+    }
+
+    .form-inner {
+      padding: 20px 0 20px 30px;
+    }
+
+  }
+
+  .booking-form1 {
+    padding: $space-md 60px 0 60px;
+    max-width: 100%;
+    text-align: center;
+
+    .form-title {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 400px;
+    }
+  }
+}
+
+@include md {
+  .subscribe-form1 {
+    .form-inner {
+      padding: 30px 20px;
+      
+      &:before{
+        display: none;
+      }
+    }
+    
+    .form-title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@include sm {
+  .form-wrap1 .form-box,
+  .form-wrap1 .form-title-box {
+    padding: 20px;
+  }
+
+  .form-wrap2 {
+    border-radius: 40px;
+    padding: 30px;
+  }
+
+  .subscribe-form1 {
+    .form-group {
+      display: block;
+      text-align: center;
+    }
+
+    input {
+      padding-left: 30px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .booking-form1 {
+    padding: $space-md 20px 0 20px;
+
+    select,
+    input {
+      padding-left: 25px;
+    }
+
+    .form-title {
+      max-width: 100%;
+    }
+  }
+}
+
+
+@include xs {
+  .form-wrap2 {
+    padding: 35px 20px;
+  }
+
+  .form-wrap3 {
+    padding: 40px 20px 40px 20px;
+  }
+}

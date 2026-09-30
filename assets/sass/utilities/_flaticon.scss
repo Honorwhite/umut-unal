@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Flaticon.woff2") format("woff2"),
+    url("../fonts/Flaticon.woff") format("woff"),
+    url("../fonts/Flaticon.ttf") format("truetype"),
+    url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after,
+.fi:before {
+  display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.flaticon-blood-pressure:before {
+  content: "\f101";
+}
+
+.flaticon-computer-mouse:before {
+  content: "\f102";
+}
+
+.flaticon-discuss:before {
+  content: "\f103";
+}
+
+.flaticon-ecg:before {
+  content: "\f104";
+}
+
+.flaticon-electrocardiogram:before {
+  content: "\f105";
+}
+
+.flaticon-group:before {
+  content: "\f106";
+}
+
+.flaticon-healthcare:before {
+  content: "\f107";
+}
+
+.flaticon-injection:before {
+  content: "\f108";
+}
+
+.flaticon-laboratory-equipment:before {
+  content: "\f109";
+}
+
+.flaticon-medical-equipment:before {
+  content: "\f10a";
+}
+
+.flaticon-medical-kit:before {
+  content: "\f10b";
+}
+
+.flaticon-medical-mask:before {
+  content: "\f10c";
+}
+
+.flaticon-medical-results:before {
+  content: "\f10d";
+}
+
+.flaticon-medical-symbol:before {
+  content: "\f10e";
+}
+
+.flaticon-quality-of-life:before {
+  content: "\f10f";
+}
+
+.flaticon-quotation:before {
+  content: "\f110";
+}
+
+.flaticon-quote:before {
+  content: "\f111";
+}
+
+.flaticon-security:before {
+  content: "\f112";
+}
+
+.flaticon-stethoscope-1:before {
+  content: "\f113";
+}
+
+.flaticon-stethoscope:before {
+  content: "\f114";
+}

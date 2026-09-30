@@ -1,0 +1,105 @@
+
+.cta-box1{
+  background-color: $theme-color;
+  padding: 85px 45px 85px 70px;
+  margin-bottom: 55px;
+  position: relative;
+
+  .shape-dotted {
+    position: absolute;
+    left: -35px;
+    bottom: -38px;
+    width: 275px;
+    height: 175px;
+    z-index: -1;
+  }
+
+  .sec-subtitle {
+    color: $white-color;
+  }
+
+  .sec-title {
+    color: $white-color;
+    max-width: 700px;
+    margin-bottom: 23px;
+  }
+
+  .vs-btn {
+    margin-right: 20px;
+  }
+
+  .cta-number {
+    font-size: 16px;
+    font-weight: 700; 
+    display: inline-block;  
+    color: $white-color;
+      
+    img {
+      margin: 0 5px 0 0;
+    }
+  }
+
+}
+
+.cta-img1 {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: initial;
+  }
+}
+
+
+@include ml {
+  .cta-box1 {
+    padding: 50px 35px 50px 35px;
+    margin-bottom: 100px;
+
+    .sec-title {
+      max-width: 100%;
+    }
+
+    .shape-dotted {
+      left: -25px;
+      bottom: -38px;
+    }
+  }
+
+  .cta-img1 {
+    margin-bottom: -130px;
+    
+    img {
+      position: relative;
+      max-width: 100%;
+    }
+  }
+}
+
+
+@include sm {
+  .cta-box1 {
+    padding: 40px 20px 30px 20px;
+    margin-bottom: 100px;
+
+    .sec-title {
+      max-width: 100%;
+    }
+
+    .shape-dotted {
+      left: 0;
+      bottom: -38px;
+    }
+
+    .cta-number {
+      margin-bottom: 0;
+      margin-top: 20px;
+    }
+  }
+
+  .cta-img1 {
+    margin-bottom: -80px;
+  }
+}

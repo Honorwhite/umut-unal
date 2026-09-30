@@ -1,0 +1,36 @@
+.wp-block-tag-cloud,
+.tagcloud {
+
+  a {
+    display: inline-block;
+    border: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 10.5px 21px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: $body-color;
+    background-color: $smoke-color;
+    border-radius: 9999px;
+
+    &:hover {
+      background-color: $theme-color;
+      color: $white-color !important;
+    }
+  }
+}
+
+.tagcloud {
+  margin-right: -5px;
+  margin-bottom: -10px;
+}
+
+.widget {
+  .tagcloud {
+    a:not(:hover) {
+      background-color: #fff;
+    }
+  }
+}

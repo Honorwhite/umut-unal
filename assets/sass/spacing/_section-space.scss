@@ -1,0 +1,63 @@
+.space,
+.space-top {
+  padding-top: $space;
+}
+
+.space,
+.space-bottom {
+  padding-bottom: $space;
+}
+
+.space-md,
+.space-md-top {
+  padding-top: $space-medium;
+}
+
+.space-md,
+.space-md-bottom {
+  padding-bottom: $space-medium;
+}
+
+
+@include md {
+  .space,
+  .space-top {
+    padding-top: $space-md;
+  }
+
+  .space,
+  .space-bottom {
+    padding-bottom: $space-md;
+  }
+
+  .space-md,
+  .space-md-top {
+    padding-top: $space-medium-md;
+  }
+
+  .space-md,
+  .space-md-bottom {
+    padding-bottom: $space-medium-md;
+  }
+}
+
+
+
+@include lg {
+  .space-md-bottom-0 {
+    padding-bottom: 0
+  }
+}
+
+.space-md {
+  padding:100px 0;
+  @include md {
+    padding:80px 0;
+  }
+}
+.custom-top-space {
+  padding-top: 247px;
+  @include sm {
+    padding-top: 204px;
+  }
+}

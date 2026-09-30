@@ -1,0 +1,124 @@
+.contact-info-table {
+  td {
+    border-bottom: 1px dashed #dfdfe0;
+    border-top: none;
+    padding-left: 0;
+    padding-right: 10px;
+
+    + td {
+      padding-right: 0;
+      text-align: right;
+    }
+  }
+}
+
+// contact-info-section-two
+.contact-info-section-two{
+  position: relative;
+  margin-bottom: -104px;
+  z-index: 9999;
+  .outer-box{
+    margin-top: 49px;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+    @include md{
+      margin-top: 0;
+      padding: 70px 0;
+    }
+  }
+  .col-lg-4{
+    &:last-child{
+      .contact-box-two{
+        &::before{
+          display: none;
+        }
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.contact-box-two{
+  text-align: center;
+  position: relative;
+  padding: 93px 0 51px;
+  @include md{
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    top: 38px;
+    right: -13px;
+    width: 1px;
+    height: 186px;
+    background: rgba(217, 217, 217, 0.50);
+    @include md{
+      display: none;
+    }
+  }
+  .icon-box{
+    position: absolute;
+    top: -49px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 119px;
+    height: 119px;
+    background-color: #07ccec;
+    line-height: 119px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    @include md{
+      position: static;
+      margin: 0 auto 20px;
+      transform: unset;
+    }
+  }
+  .title{
+    color: var(--white-color);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    @include vxs{
+      font-size: 26px;
+    }
+  }
+  .blog-btn-two{
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 3px solid #D9D9D9;
+  }
+  sub{
+    color: var(--white-color);
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 11px;
+    display: inline-block;
+  }
+  span{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--title-font);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .title.two{
+    margin-bottom: 19px;
+  }
+}
+
+@include md {
+  .contact-map.mt-70 {
+    margin-top: 10px;
+  }
+}

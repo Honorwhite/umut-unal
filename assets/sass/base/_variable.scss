@@ -1,0 +1,138 @@
+:root {
+  --theme-color       : #07ccec;
+  --theme-color2      : #2cb624;
+  --theme-color3      : #27477d;
+  --theme-color4      : #07ccec;
+  --theme-color5      : #27467C;
+  --title-color       : #27477d;
+  --title-color2      : #000000;
+  --body-color        : #888c92;
+  --body-color2       : #555555;
+  --secondary-color   : #cdf8ff;
+  --smoke-color       : #f3f6f7;
+  --light-color       : #afafaf;
+  --black-color       : #000000;
+  --dark-color        : #060d0f;
+  --white-color       : #ffffff;
+  --yellow-color      : #fec624;
+  --success-color     : #28a745;
+  --error-color       : #dc3545;
+  --border-color      : rgba(0,0,0,0.10);
+  --title-font        : 'Quicksand',  sans-serif;
+  --body-font         : 'Roboto', sans-serif;
+  --subtitle-font     : 'Dancing Script', cursive;
+  --icon-font         : 'Font Awesome 5 Pro';
+  --flaticon          : 'Flaticon';
+  --ripple-ani-duration: 5s;
+}
+
+
+// Color Variation
+$theme-color          : var(--theme-color);
+$theme-color2         : var(--theme-color2);
+$theme-color3         : var(--theme-color3);
+$theme-color4         : var(--theme-color4);
+$title-color          : var(--title-color);
+$title-color2         : var(--title-color2);
+$body-color           : var(--body-color);
+$body-color2          : var(--body-color2);
+$smoke-color          : var(--smoke-color);
+$light-color          : var(--light-color);
+$secondary-color      : var(--secondary-color);
+$white-color          : var(--white-color);
+$black-color          : var(--black-color);
+$dark-color           : var(--dark-color);
+$yellow-color         : var(--yellow-color);
+$success-color        : var(--success-color);
+$error-color          : var(--error-color);
+$border-color         : var(--border-color);
+
+// Font Variation
+$icon-font   : var(--icon-font);
+$flaticon    : var(--flaticon);
+
+// Typography
+$title-font      : var(--title-font);
+$body-font       : var(--body-font);
+$subtitle-font   : var(--subtitle-font);
+$body-font-size  : 16px;
+$body-line-Height: 26px;
+$body-font-weight: 400;
+$p-line-Height   : 1.7;
+
+
+// Device Variation
+$hd: 1920px; // Large Device Than 1920
+$xl: 1500px; // Extra large Device
+$ml: 1399px; // Medium Large Device
+$lg: 1199px; // Large Device (Laptop)
+$md: 992px; // Medium Device (Tablet)
+$sm: 767px; // Small Device
+$xs: 576px; // Extra Small Device
+
+
+// Spacing Count with 5x
+$space-count: 10;
+
+// Section Space  For large Device
+$space : 130px;
+$space-medium: 100px;
+
+// Section Space On small Device
+$space-md : 80px;
+$space-medium-md: 50px;
+
+
+// BG Color Mapping 
+$bgcolorMap  : ();
+$bgcolorMap  : map-merge((
+  "theme"    : $theme-color,
+  "smoke"    : $smoke-color,
+  "secondary": $secondary-color,
+  "white"    : $white-color,
+  "black"    : $black-color,
+  "title"    : $title-color,
+  ), $bgcolorMap);
+  
+  
+  // Overlay Color Mapping 
+  $overlaycolorMap : ();
+  $overlaycolorMap : map-merge((
+  "theme"    : $theme-color,
+  "theme3"   : $theme-color3,
+  "title"    : $title-color,
+  "white"    : $white-color,
+  "dark"     : $dark-color,
+), $overlaycolorMap);
+
+
+// Text Color Mapping 
+$textColorsMap : ();
+$textColorsMap : map-merge((
+  "theme"      : $theme-color,
+  "title"      : $title-color,
+  "body"       : $body-color,
+  "light"      : $light-color,
+  "white"      : $white-color,
+  "yellow"     : $yellow-color,
+  "success"    : $success-color,
+  "error"      : $error-color), 
+$textColorsMap);
+
+
+// Font Mapping 
+$fontsMap    : ();
+$fontsMap    : map-merge((
+  "flaticon" : $flaticon,
+  "icon"     : $icon-font,
+  "title"    : $title-font,
+  "body"     : $body-font,
+  "subtitle" : $subtitle-font,
+), $fontsMap);
+
+
+.home-five {
+  --theme-color: #f20000;
+  --title-color: #000000;
+  --body-color: #555555;
+}

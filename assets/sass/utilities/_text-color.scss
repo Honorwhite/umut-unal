@@ -1,0 +1,27 @@
+@each $textColorsMap, $value in $textColorsMap {
+  .text-#{$textColorsMap} {
+    color: #{$value} !important;
+  }
+}
+
+.text-inherit {
+  color: inherit;
+  &:hover {
+    color: $theme-color;
+  }
+}
+
+.text-reset {
+  &:hover {
+    color: $theme-color !important;
+  }
+}
+
+
+.text-white-light {
+  color: rgba(255,255,255,0.8);
+}
+
+.hover-white:not(.vs-btn):hover {
+  color: $white-color !important;
+}

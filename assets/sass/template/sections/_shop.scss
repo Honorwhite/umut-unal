@@ -1,0 +1,535 @@
+.vs-product-box {
+  text-align: center;
+  transition: all ease 0.4s;
+
+  .rating-wrap {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+
+  .star-rating {
+    margin-right: -0.7em;
+  }
+
+  .product-title {
+    margin-bottom: 8px;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .price {
+    color: $theme-color;
+    font-weight: 700;
+  }
+
+  .product-content {
+    padding: 25px 20px;
+    border: 1px solid #f3f6f7;
+    border-top: none;
+    transition: all ease 0.4s;
+  }
+
+  .product-img {
+    background-color: #f3f6f7;
+    overflow: hidden;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      left: -50%;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background-color: $title-color;
+      opacity: 0.50;
+      z-index: 1;
+      transition: all ease 0.4s;
+    }
+
+    &:after {
+      left: auto;
+      right: -50%;
+    }
+  }
+
+  .icon-btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+  }
+
+  // .vs-btn {
+  //   height: 40px;
+  //   width: 120px;
+  //   padding: 0;
+  //   font-size: 14px;
+  //   line-height: 40px;
+  //   margin: 0 10px;
+  // }
+
+  .actions-btn {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 3;
+    margin-top: -20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+  }
+
+
+
+  &:hover {
+    box-shadow: 0px 7px 40px 0px rgba(39, 71, 125, 0.12);
+
+    .product-content {
+      border-color: transparent;
+    }
+
+
+    .product-img {
+      &:before {
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+      }
+    }
+
+    .actions-btn {
+      margin-top: 0;
+      opacity: 1;
+      visibility: visible;
+      transition-delay: 0.4s;
+    }
+  }
+}
+
+
+.product-list {
+  display: flex;
+  text-align: left;
+
+  .product-img {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .star-rating {
+    font-size: 12px;
+    width: 86px;
+  }
+
+  .product-content {
+    flex: 1;
+    border-top: 1px solid #f3f6f7;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .icon-btn {
+    width: auto;
+    height: auto;
+    line-height: auto;
+    margin: 0 3px;
+
+    i {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 13px;
+    }
+  }
+}
+
+.product-thumb {
+  img {
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid transparent;
+    transform: scale(1);
+    transition: all ease 0.4s;
+  }
+
+  &.slick-current {
+    img {
+      border-color: $theme-color;
+    }
+  }
+}
+
+
+.vs-sort-bar {
+  .icon-btn {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .form-select {
+    height: 35px;
+    border-width: 2px;
+    width: fit-content;
+    min-width: auto;
+    color: $title-color;
+    padding-right: 30px;
+    padding-left: 20px;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  label {
+    font-size: 14px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: $title-color;
+  }
+}
+
+
+
+.product-big-img {
+  position: relative;
+
+  .price {
+    font-size: 30px;
+    font-weight: 700;
+    color: $theme-color;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    font-family: $title-font;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    line-height: 1;
+
+    del {
+      margin-right: 20px;
+      font-size: 0.7em;
+      color: $body-color;
+    }
+  }
+
+  .add_to_wishlist {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-weight: 400;
+    color: $title-color;
+
+    i {
+      margin-right: 5px;
+      color: $theme-color;
+    }
+  }
+}
+
+
+
+.product-details {
+  .woocommerce-product-rating {
+    margin-bottom: 7px;
+
+    .star-rating {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .woocommerce-review-link {
+      color: $body-color;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+  }
+
+  .product-title {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed $theme-color;
+  }
+
+  .vs-input-group {
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+
+  .product_meta {
+    margin-top: 33px;
+  }
+
+}
+
+
+.size-select {
+  input[type="radio"] {
+    ~label {
+      font-size: 12px;
+      padding: 8px 14px;
+      background-color: #fff;
+      border-radius: 999px;
+      text-transform: none;
+      font-weight: 400;
+      transition: all ease 0.4s;
+
+      &:before {
+        display: none;
+      }
+    }
+
+
+    &:checked {
+      ~label {
+        background-color: $theme-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+
+.product_meta {
+  >span {
+    display: block;
+    color: $title-color;
+    margin-bottom: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a,
+    span {
+      color: #898b97;
+      display: inline-block;
+      margin-right: 10px;
+
+      &:after {
+        content: ',';
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        &:after {
+          display: none;
+        }
+      }
+
+      &:first-child {
+        margin-left: 5px;
+      }
+    }
+
+    a {
+      &:hover {
+        color: $theme-color;
+      }
+    }
+  }
+}
+
+
+.product-tab {
+  position: relative;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: -0.2em;
+
+  a {
+    color: $title-color;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 20px 20px 20px;
+  }
+
+
+  .indicator {
+    position: absolute;
+    left: 0;
+    top: auto !important;
+    height: 0 !important;
+    bottom: -1px;
+    transition: all ease 0.4s;
+    border-bottom: 1px solid $theme-color;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      border-top: 1px solid $theme-color;
+      border-left: 1px solid $theme-color;
+      transform: rotate(45deg);
+      margin: -6px 0 0 -6px;
+      background-color: $white-color;
+    }
+  }
+}
+
+.product-info-list {
+  list-style-type: none;
+  margin: 0 0 30px 0;
+  padding: 0;
+
+  li {
+    font-size: 18px;
+    position: relative;
+    color: #898b97;
+    margin-bottom: 13px;
+    padding-left: 43px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '\f00c';
+      font-family: $icon-font;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      line-height: 25px;
+      font-size: 14px;
+      background-color: $white-color;
+      color: $theme-color;
+      box-shadow: 0px 10px 32.75px 0 rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+
+    span {
+      color: $title-color;
+      margin-right: 3px;
+    }
+  }
+}
+
+
+.vs-text-box {
+  border-left: 8px solid $theme-color;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 1.6;
+  padding: 48px 50px;
+  margin-bottom: 30px;
+}
+
+.shop-wrap1 {
+  padding: 80px;
+}
+
+@include lg {
+  .shop-wrap1 {
+    padding: 40px;
+  }
+
+  .product-big-img {
+    .price {
+      font-size: 26px;
+      right: 15px;
+      top: 15px;
+
+      del {
+        margin-right: 10px;
+      }
+    }
+
+    .add_to_wishlist {
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+
+
+  .product-details {
+    .woocommerce-product-rating .woocommerce-review-link {
+      margin-left: 0;
+    }
+  }
+
+
+  .product-list .product-img {
+    width: 100%;
+    max-width: 220px;
+  }
+
+
+
+
+}
+
+
+@include md {
+  .product-list .product-img {
+    width: 100%;
+    max-width: 150px;
+  }
+}
+
+
+
+@include sm {
+  .shop-wrap1 {
+    padding: 40px 20px;
+  }
+
+  .shop-wrap1.mb-80 {
+    margin-bottom: 60px;
+  }
+
+  .product-details {
+    .vs-input-group {
+      >.text-title {
+        margin-bottom: 10px;
+        display: block;
+      }
+    }
+
+    .actions .vs-btn {
+      padding-left: 32px;
+      padding-right: 20px;
+      margin-left: 30px;
+    }
+  }
+
+  .vs-text-box {
+    padding: 30px 30px;
+  }
+
+  .product-list {
+    display: block;
+    text-align: center;
+
+    .product-img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .product-content {
+      display: block;
+      border-left: 1px solid #f3f6f7;
+      border-top: none;
+    }
+  }
+}

@@ -1,0 +1,277 @@
+.medical-box {
+  text-align: center;
+  
+  &__img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px auto;
+    box-shadow: 10px 17.321px 24px 0px rgba(0, 0, 0, 0.03);
+    border: 1px solid $theme-color4;
+    
+    img {
+      width: 100%;
+      transform: scale(1);
+      transition: all ease 0.4s;
+    }
+  }
+
+
+  &__title {
+    font-size: 24px;
+    color: $title-color2;
+    margin: 0 auto 0 auto;
+    max-width: 210px;
+  }
+
+  &:hover & {
+    &__img {
+      img {
+        transform: scale(1.1) rotate(15deg);
+      }
+    }
+  }
+}
+
+
+.appointment-box {
+  background-color: #f5f7ff;
+  padding: 40px 50px 44px 50px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-bottom: 50px;
+
+  &__title {
+    color: $title-color2;
+    margin: 0 0 5px 0;
+  }
+
+  &__text {
+    margin: 0 0 23px 0;
+  }
+
+  &__number {
+    display: block;
+    width: max-content;
+    color: $title-color2;
+    font-weight: 700;
+    margin: 20px 0 0 0;
+    transition: all ease 0.4s;
+
+    i {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    &:hover {
+      color: $theme-color2;
+    }
+  }
+}
+
+
+.video-box {
+  position: relative;
+
+  .video-thumb {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+  
+  .video-content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+  }
+
+  .play-btn {
+    margin-bottom: 30px;
+  }
+
+  .video-title {
+    font-size: 36px;
+    color: $white-color;
+    font-weight: 400;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+
+.social-bars-title {
+  color: $white-color;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.social-bars {
+  
+  a {
+    width: 100%;
+    height: 66px;
+    line-height: 66px;
+    color: $white-color;
+    background-color: $theme-color;
+    padding: 0 30px 0 40px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9999px;
+    transition: all ease 0.4s;
+
+    i {
+      border-left: 1px solid $white-color;
+      display: inline-block;
+      height: 45px;
+      line-height: 45px;
+      font-size: 24px;
+      padding-left: 25px;
+    }
+
+    &:hover {
+      background-color: $title-color;
+      color: $white-color;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+
+    &.facebook {
+      --theme-color: #1124b1;
+    }
+
+    &.twitter {
+      --theme-color: #3393ec;
+    }
+
+    &.instagram {
+      --theme-color: #ff2800;
+      background-image: -moz-linear-gradient( 90deg, rgb(10,0,178) 0%, rgb(255,0,0) 50%, rgb(255,252,0) 100%);
+      background-image: -webkit-linear-gradient( 90deg, rgb(10,0,178) 0%, rgb(255,0,0) 50%, rgb(255,252,0) 100%);
+      background-image: -ms-linear-gradient( 90deg, rgb(10,0,178) 0%, rgb(255,0,0) 50%, rgb(255,252,0) 100%);
+      background-image: linear-gradient( 90deg, rgb(10,0,178) 0%, rgb(255,0,0) 50%, rgb(255,252,0) 100%);
+
+      &:hover {        
+        background-image: -moz-linear-gradient( 90deg,rgb(255,0,0) 0%, rgb(255,252,0) 50%, rgb(10,0,178) 100%);
+        background-image: -webkit-linear-gradient( 90deg,rgb(255,0,0) 0%, rgb(255,252,0) 50%, rgb(10,0,178) 100%);
+        background-image: -ms-linear-gradient( 90deg,rgb(255,0,0) 0%, rgb(255,252,0) 50%, rgb(10,0,178) 100%);
+        background-image: linear-gradient( 90deg,rgb(255,0,0) 0%, rgb(255,252,0) 50%, rgb(10,0,178) 100%);
+      }
+    }
+  }
+}
+
+
+.facility-style1 {
+  text-align: center;
+  margin-bottom: 22px;
+  
+  .facility-icon {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 24px;
+    background-color: $white-color;
+    border-radius: 50%;    
+    transition: all ease 0.4s;   
+    z-index: 1;
+    position: relative;
+    margin: 0 auto 10px auto;
+    box-shadow: 0.5px 0.866px 27px 0px rgba(35, 31, 32, 0.05);
+    outline: 1px solid $theme-color;
+    outline-offset: -4px;
+    transition: all ease 0.4s;
+    
+    img {
+      transition: all ease 0.4s;
+    }
+  }
+
+  .facility-title {
+    font-size: 24px;
+    margin: 0 0 2px 0;
+    letter-spacing: -0.01em;
+  }
+
+  .facility-text {
+    font-weight: 500;
+    color: $title-color;
+    margin: 0;
+  }
+
+  &:hover {
+    .facility-icon {
+      outline-color: $white-color;
+      background-color: $theme-color;
+
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+
+@include md {
+  .appointment-box {
+    max-width: 100%;
+
+    &__number {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .video-box {
+    .video-title {
+      font-size: 20px;
+      max-width: 245px;
+    }
+
+    .play-btn {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+@include sm {
+  .medical-box {
+    &__img {
+      width: 120px;
+      height: 120px;
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+  }
+
+  .appointment-box {
+    padding: 40px 20px 44px 20px;
+  }
+}
+
+@include xs {
+  .video-box {
+    .video-title {
+      font-size: 12px;
+      max-width: 245px;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@media only screen and (min-width: 1300px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    --bs-gutter-x: .75rem;
+    max-width: calc(1220px + (var(--bs-gutter-x) * 2));
+  }
+
+  .home-five,
+  .home-four {
+    .container-xxl, 
+    .container-xl, 
+    .container-lg, 
+    .container-md, 
+    .container-sm, 
+    .container {
+      --bs-gutter-x: .75rem;
+      max-width: calc(1295px + (var(--bs-gutter-x) * 2));
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .container-fluid.px-0:not(.default) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+
+    .row {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+
+@media (min-width: 1600px) {
+  .custom-container {
+    max-width: 1620px;
+  }
+
+  .container-style1 {
+    max-width: 1400px;
+  }
+
+  .vs-container {
+    max-width: 1565px;
+    margin-left: 0;
+    margin-right: auto;
+
+    @include hd {
+      margin-left: auto;
+    }
+  }
+}
+
+@media (min-width: 1600px) and (max-width: $hd) {
+  .home-four .container-style2,
+  .home-five .container-style2,
+  .container-style2 {
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 0;
+    overflow: hidden;
+    max-width: calc(1586px + var(--bs-gutter-x));
+  }
+}
+
+
+@media (max-width: 1599.99px) {
+  .d-none-xxxl {
+    display: none !important;
+  }
+
+  .vs-container {
+    max-width: 100%;
+  }
+}
+
+
+
+.carousel-container {
+  max-width: 1320px;
+  padding: 0 50px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @include ml {
+    max-width: 1200px;
+    padding: 0 45px;
+  }
+
+  @include lg {
+    max-width: 980px;
+    padding: 0 25px;
+  }
+
+  @include md {
+    max-width: 740px;
+    padding: 0 25px;
+  }
+
+  @include sm {
+    max-width: 560px;
+    padding: 0 25px;
+  }
+
+  @include xs {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-slide {
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+
+    &.slick-active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+}
+
+
+.container-style6{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.container-style7{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.container-style8{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

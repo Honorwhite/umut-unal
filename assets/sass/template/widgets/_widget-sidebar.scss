@@ -1,0 +1,54 @@
+.widget {
+  padding: 40px;
+  margin-bottom: 30px;
+  background-color: $smoke-color;
+  border-radius: 5px;
+}
+
+.widget_title {
+  font-size: 22px;  
+  line-height: 1em;
+  margin-bottom: 20px;
+  margin-top: -0.07em;
+}
+
+.sidebar-area {
+  .widget_title {
+    position: relative;
+    padding: 0 0 20px 0;
+    margin: 0 0 25px 0;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background-color: $theme-color;
+    }
+
+    &:after {
+      left: 55px;
+      width: 7px;
+      background-color: $title-color;
+    }
+  }
+}
+
+@include lg {
+  .sidebar-area.pl-30 {
+    padding-left: 0;
+  }
+  
+  .widget {
+    padding: 30px;
+  }
+}
+
+@include xs {
+  .widget {
+    padding: 30px 20px;
+  }
+}

@@ -1,0 +1,239 @@
+.feature-style1 {
+  .feature-body {
+    position: relative;
+    border: 1px solid #DDDDDD;
+    padding: 42px 40px 34px 40px;
+    background-color: $white-color;
+    transition: all ease 0.4s;
+    margin-bottom: 30px;
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+  }
+
+  .feature-number {
+    font-size: 60px;
+    font-weight: 900;
+    color: $theme-color2;
+    display: block;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  .feature-title {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+  }
+
+  .feature-text {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .feature-line {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin: -1.5px 0 0 0;
+    height: 3px;
+    width: 135px;
+    background-color: $theme-color2;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      background-color: $theme-color2;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      right: 0;
+      top: 50%;
+      margin: -8px -8px 0 0;
+      border-radius: 50%;
+      line-height: 1;
+      box-shadow: 0 0 0 6px rgba(#FF741B, 0.15);
+    }
+
+    &:after {
+      left: 0;
+      width: 10px;
+      height: 10px;
+      margin: -5px 0 0 0;
+      box-shadow: none;
+    }
+  }
+
+  &:hover {
+    .feature-body {
+      outline-color: $theme-color2;
+      border-color: transparent;
+      box-shadow: 0.5px 0.87px 27px 0 rgba(#231F20, 0.04);
+    }
+  }
+
+  &:nth-child(even) {
+    .feature-line {
+      right: auto;
+      left: 100%;
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
+
+.feature-middle-img {
+  position: relative;
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+}
+
+.feature-style2 {
+  margin: -0.5px;
+  z-index: 1;
+  padding: 50px 50px 40px 50px;
+  outline-offset: -2px;
+  outline: 2px solid transparent;
+  position: relative;
+  border: 1px solid #D9D9D9;
+  background-color: $white-color;
+  transition: all ease 0.4s;
+
+  .feature-icon {
+    width: var(--icon-size, 110px);
+    height: var(--icon-size, 110px);
+    line-height: var(--icon-size, 110px);
+    margin: 0 0 26px 0;
+    text-align: center;
+    background-color: rgba(#FF741B, 0.10);
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    font-size: 40px;
+    color: $theme-color2;
+
+    img {
+      transition: all ease 0.4s;
+      filter: none;
+    }
+
+    i {
+      line-height: inherit;
+    }
+  }
+
+  .feature-title {
+    margin: 0 0 8px 0;
+  }
+
+  .feature-text {
+    margin: 0;
+  }
+
+  &:hover {
+    border-color: $theme-color2;
+    outline-color: $theme-color2;
+    z-index: 3;
+
+    .feature-icon {
+      background-color: $theme-color2;
+      color: $white-color;
+      
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &.style2 {
+    padding: 45px 45px 35px 45px;
+
+    .feature-title {
+      font-size: 22px;
+    }
+
+    .feature-icon {
+      --icon-size: 80px;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.slick-slide {
+  .feature-style2 {
+    margin: 0;
+  }
+}
+
+@include xl {
+  .feature-style2 {
+    padding: 30px 30px 30px 30px;
+    
+    .feature-icon {
+      --icon-size: 100px;
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+@include ml {
+  .feature-style1 {
+    .feature-body {
+      padding: 32px 30px 24px 30px;
+    }
+
+    .feature-number {
+      margin-bottom: 10px;
+    }
+  }
+
+  .feature-style2 {
+    &.style2 {
+      padding: 35px 30px 30px 30px;
+    }
+  }
+}
+
+@include lg {
+  .feature-style1 {
+    .feature-line {
+      display: none;
+    }
+  }
+
+  .feature-style2 {
+    &.style2 {
+      padding: 35px 20px 30px 20px;
+
+      .feature-title {
+        font-size: 20px;
+      }
+
+     .feature-icon {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  .feature-middle-img {
+    text-align: center;
+    margin-bottom: 30px;
+    
+    img {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
+}
+
+
+@include md {
+
+}

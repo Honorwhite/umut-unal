@@ -1,0 +1,225 @@
+.form-style1 {
+  padding: 80px 80px 80px 0;
+  
+  .form-title {
+    color: $white-color;
+    font-size: 34px;
+    margin: -0.2em 0 10px 0;
+  }
+
+  .form-text {
+    color: $white-color;
+    margin: 0 0 32px 0;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  input {
+    height: 60px;
+    color: #949494;
+    font-weight: 500;
+    padding-left: 40px;
+    padding-right: 30px;
+    border: none;
+    margin: 0 10px 0 0;
+    border-radius: 9999px;
+    flex: 1;
+
+    @include inputPlaceholder {
+      color: #949494;
+    }
+  }
+
+  &.layout2 {
+    padding: 0;
+
+    .form-group {
+      background-color: $white-color;
+      border-radius: 9999px;
+    }
+
+    .form-title {
+      margin: -0.2em 0 5px 0;
+    }
+
+    input {
+      background-color: transparent;
+      height: 59px;
+    }
+
+    .vs-btn {
+      margin: -1px;
+    }
+  }
+}
+
+
+.form-style2 {
+  background-color: $white-color;
+  padding: 53px 50px 60px 50px;
+  
+  .form-title {
+    font-size: 24px;
+    width: max-content;
+    margin: 0 0 50px 0;
+    max-width: 100%;
+    text-decoration: underline;
+    text-decoration-color: $theme-color2;
+  }
+
+  select,
+  input {
+    border: 1px solid #D9D9D9;
+    height: 60px;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  &.layout2 {
+    padding: 0 59px 0 0;
+  }
+}
+
+
+.form-img1 {
+  margin-top: -95px;
+}
+
+
+@include ml {
+  .form-style1 {
+    padding: 60px 60px 60px 0;
+  }
+
+  .form-img1 {
+    margin: 0;
+    padding: 60px 0;
+    
+    img {
+      width: 100%;
+    }
+  }
+
+  .form-style1 {
+    &.layout2 {
+      padding-right: 30px;
+    }
+  }
+
+  .form-style2 {
+    &.layout2 {
+      padding: 0 20px 0 0;
+    }
+  }
+}
+
+
+@include lg {
+  .form-style1 {
+    padding: 40px 40px 40px 0;
+
+    .form-title {
+      font-size: 26px;
+    }
+
+    input {
+      height: 60px;
+      padding-left: 25px;
+      padding-right: 30px;
+    }
+  }
+
+  .form-style1 {
+    &.layout2 {
+      padding-right: 0;
+    }
+  }
+
+  .form-style2 {
+    &.layout2 {
+      padding: 0 0 0 0;
+
+      .form-title {
+        margin-bottom: 30px;
+        font-size: 20px;
+      }
+
+      textarea,
+      input {
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+@include md {
+  .form-style1 {
+    padding-right: 0;
+
+    .form-title {
+      margin-bottom: 15px;
+    }
+  }
+
+  .form-img1 {
+    padding: 60px 0 0 0;
+  }
+
+  .form-style1 {
+    &.layout2 {
+      text-align: center;
+    }
+  }
+
+  .form-style2 {
+    padding: 43px 40px 50px 40px;
+
+    .form-title {
+      margin: 0 0 30px 0;
+    }
+  }
+}
+
+@include sm {
+  .form-style1 {
+    .form-group {
+      display: block;
+    }
+
+    input {
+      margin-bottom: 20px;
+    }
+
+    &.layout2 {
+      .form-group {
+        background-color: transparent;
+      }
+
+      input {
+        background-color: $white-color;
+      }
+    }
+  }
+
+  .form-style2 {
+    padding: 43px 20px 50px 20px;
+
+    .form-title {
+      margin: 0 0 30px 0;
+      font-size: 20px;
+    }
+
+    input,
+    select {
+      height: 50px;
+      padding-left: 15px;
+      background-position: right 15px center;
+    }
+  }
+}

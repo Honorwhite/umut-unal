@@ -1,0 +1,256 @@
+.feaures-mark {
+  position: relative;
+  border: 1px solid #e7eaf0;
+  padding: 25px 30px 25px 40px;
+  transition: all ease 0.4s;
+  --icon-size: 40px;
+  margin-left: calc(var(--icon-size) / 2);
+  background-color: $white-color;
+
+  .mark-icon {
+    position: absolute;
+    top: 50%;
+    left: calc(var(--icon-size) / -2);
+    display: inline-block;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    line-height: var(--icon-size);
+    margin-top: calc(var(--icon-size) / -2);
+    text-align: center;
+    background-color: $white-color;
+    color: $theme-color;
+    border-radius: 50%;
+    box-shadow: 0px 6px 37px 0px rgba(39, 71, 125, 0.1);
+    border: 1px solid #e7eaf0;
+  }
+
+  &:hover {
+    box-shadow: 0px 6px 37px 0px rgba(28, 53, 95, 0.1);
+  }
+}
+
+
+.features-inner {
+  margin-left: 100px;
+  padding: 90px 0 70px 0;
+}
+
+.features-video-box {
+  height: 100%;
+  width: 100%;
+}
+
+.feature-style1 {
+  margin-bottom: 30px;
+
+  .feature-body {
+    border: 1px solid $theme-color2;
+    transition: all ease 0.4s;
+    background-size: 100% 100%;
+  }
+
+  .feature-content {
+    padding: 40px 50px 27px 50px;
+  }
+
+  .feature-title {
+    color: $title-color2;
+    margin: 0 0 10px 0;
+  }
+
+  .feature-text {
+    color: $body-color2;
+  }
+
+  .feature-icon {
+    background-color: $theme-color2;
+    text-align: center;
+    padding: 40px 0;
+    transition: all ease 0.4s;
+  }
+}
+
+.slick-center.feature-style1,
+.feature-style1:hover {
+  --theme-color2: var(--theme-color4)
+}
+
+.feature-wrap1 {
+  background-color: #e4e4e4;
+  margin-top: -57px;
+  position: relative;
+  z-index: 31;
+  box-shadow: 10px 17.321px 24px 0px rgba(0, 0, 0, 0.03);
+}
+
+.feature-style2 {
+
+  .feature-body {
+    text-align: center;
+    background-color: $white-color;
+    padding: 50px 30px 40px 30px;
+    transition: all ease 0.4s;
+  }
+
+  .feature-icon {
+    width: var(--icon-size, 130px);
+    height: var(--icon-size, 130px);
+    line-height: var(--icon-size, 130px);
+    text-align: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 50%;
+    margin: 0 auto 32px auto;
+    position: relative;
+    transition: all ease 0.4s;
+
+    img {
+      transform: rotateY(0);
+      transition: all ease 0.4s;
+    }
+  }
+
+  .feature-title {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 0 10px 0;
+    transition: all ease 0.4s;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .feature-text {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 28px 0;
+    transition: all ease 0.4s;
+  }
+
+  .feature-btn {
+    display: inline-block;
+    font-size: 28px;
+    color: #999999;
+    transition: all ease 0.4s;
+  }
+
+
+  &:hover {
+    .feature-icon {
+      img {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+}
+
+
+.slick-center.feature-style2,
+.feature-style2:hover {
+  .feature-body {
+    background-color: $theme-color;
+  }
+
+  .sub-plus {
+    color: $theme-color;
+  }
+
+  .feature-icon {
+    background-color: $white-color;
+    border-color: $white-color;
+  }
+
+
+  .feature-title a,
+  .feature-btn,
+  .feature-text {
+    color: $white-color;
+  }
+
+  .feature-title a,
+  .feature-btn {
+    &:hover {
+      color: $title-color2;
+    }
+  }
+}
+
+
+@include xl {
+  .features-inner {
+    margin-left: 40px;
+    padding-right: 40px;
+  }
+
+  .feaures-mark {
+    max-width: 265px;
+  }
+}
+
+@include ml {
+  .features-inner {
+    margin-left: 30px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+
+  .feature-style1 .feature-content {
+    padding: 25px 30px 14px 30px;
+  }
+}
+
+
+@include lg {
+  .feature-wrap1 {
+    margin-top: $space;
+  }
+
+  .features-video-box {
+    height: 600px;
+  }
+
+  .feaures-mark {
+    max-width: 100%;
+  }
+}
+
+@include md {
+  .features-video-box {
+    height: 400px;
+  }
+
+  .features-inner {
+    margin-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .feature-style2 {
+    .feature-body {
+      padding: 50px 20px 40px 20px;
+    }
+  }
+
+
+  .feature-wrap1 {
+    margin-top: $space-medium;
+  }
+}
+
+
+@include sm {
+  .text-md-start.feaures-mark {
+    --icon-size: 40px;
+    padding: 40px 25px 25px 25px;
+    margin-top: calc(var(--icon-size) / 2);
+    margin-left: 0;
+
+    .mark-icon {
+      top: 0;
+      left: 50%;
+      margin-top: calc(var(--icon-size) / -2);
+      margin-left: calc(var(--icon-size) / -2);
+    }
+  }
+}

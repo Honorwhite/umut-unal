@@ -1,0 +1,211 @@
+.widget {
+  .newsletter-form {
+    position: relative;
+
+   .form-icon {
+     position: absolute;
+     left: 20px;
+     top: 19px;
+   }
+
+   .form-control {
+     padding-left: 50px;
+     padding-right: 20px;
+   }
+  }
+}
+
+
+// .newsletter-section
+.newsletter-section{
+  position: relative;
+  z-index: 9;
+  background-color: #27477D;
+  @include xs {
+    padding: 83px 0 73px;
+  }
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/testimonial/pattern3-1.png);
+    z-index: -1;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background: #27477D;
+    z-index: -1;
+  }
+}
+.title-area-two.light{
+    position: relative;
+    margin-bottom: 0;
+    margin-right: -10px;
+    z-index: 99;
+    @include lg{
+      text-align: center;
+      margin-right: 0;
+    }
+    .sub-title6{
+      @include lg{
+        &::before{
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      @include sm{
+        margin-bottom: 10px;
+      }
+    }
+    h2{
+      margin-bottom: 0;
+      @include sm{
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @include xs{
+        font-size: 35px;
+        line-height: 45px;
+      }
+      @include vxs{
+        font-size: 27px;
+        line-height: 37px;
+      }
+    }
+}
+
+.newsletter-form{
+  text-align: right;
+  margin-top: 39px;
+  @include xl{
+    text-align: center;
+  }
+  .form-group{
+    position: relative;
+    display: inline-block;
+    @include xs{
+      width: 100%;
+    }
+    input{
+      height: 75px;
+      width: 521px;
+      border: 0;
+      @include xs{
+        width: 100%;
+      }
+      @include vxs{
+        height: 60px;
+      }
+    }
+    .btn-style{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: 0;
+      i{
+        margin-left: 3px;
+      }
+      @include vxs{
+        position: static;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+// news-letter-section
+.news-letter-section-two{
+  position: relative;
+  margin-top: -130px;
+  @include lg {
+    margin-top: 0;
+  }
+}
+
+.news-letter-box-two{
+  position: relative;
+  padding: 95px 0;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #084c7d;
+    @include ml{
+      right: 99%;
+    }
+  }
+}
+
+.news-content7{
+  display: flex;
+  align-items: center;
+  @include md{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  img{
+    position: relative;
+    z-index: 999;
+    @include md{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.letter-btn-box{
+  @include lg{
+    margin-top: 20px;
+  }
+  @include md{
+    text-align: center;
+  }
+}
+.btn-style7.v5{
+  padding: 0 40px;
+}
+.news-letter-title{
+  margin-left: 70px;
+  @include md{
+    margin-left: 0;
+  }
+  @include vxs {
+    margin-left: -15px;
+  }
+  .sub-title7{
+    font-family: var(--subtitle-font);
+    color: var(--white-color);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  h2{
+    color: var(--white-color);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0;
+    @include xs{
+      font-size: 36px;
+    }
+    @include vxs{
+      font-size: 25px;
+    }
+  }
+}

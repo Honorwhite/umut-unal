@@ -1,0 +1,152 @@
+.skill-wrap1 {
+  padding: 60px 100px 25px 100px;
+  border-radius: 0 0 100px 100px;
+  box-shadow: 0px 5px 120px 0px rgba(39, 71, 125, 0.15);
+}
+
+.skill-box {
+  max-width: 310px;
+
+  .ripple-icon {
+    &:after,
+    &:before {
+      animation: ripple-xs 4s infinite ease-in-out;
+    }
+  }
+}
+
+
+// Skills section
+.skills-section{
+  position: relative;
+  .title-area-four{
+    margin-bottom: 34px;
+    h2{ 
+      @include sm{
+        font-size: 59px;
+      }
+      @include sm{
+        br{
+          display: none;
+        }
+      }
+      @include xs{
+        font-size: 42px;
+      }
+      @include vxs{
+        font-size: 28px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+.skill-content{
+  margin-top: 54px;
+  @include lg {
+    margin-top: 0;
+  }
+}
+.circle-column{
+  position: relative;
+  margin-right: 28px !important;
+  @include sm{
+    margin-right: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  @include xs{
+    margin-right: 12px !important;
+  }
+  @include vxs{
+    margin-right: 0 !important;
+  }
+}
+.counter-box{
+  @include sm{
+    flex-wrap: wrap;
+  }
+  @include vxs{
+    justify-content: center;
+  }
+}
+.progress-title{
+  position: absolute;
+  bottom: 71px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+}
+.counter-box{
+  display: flex;
+  * {margin:0; padding:0;}
+  .circle_percent {font-size:210px; width: 210.885px; height: 210.885px; position: relative; background: #cfebff; border-radius:50%; overflow:hidden; display:inline-block;}
+  .circle_inner {position: absolute; left: 0; top: 0; width: 210.885px; height: 210.885px; clip:rect(0 210.885px 210.885px .5em);}
+  .round_per {position: absolute; left: 0; top: 0; width: 210.885px; height: 210.885px; background: var(--theme-color4); clip:rect(0 210.885px 210.885px .5em); transform:rotate(180deg); transition:1.05s;}
+  .percent_more .circle_inner {clip:rect(0 .5em 1em 0em);}
+  .percent_more:after {position: absolute; left: .5em; top:0em; right: 0; bottom: 0; background: var(--theme-color4); content:'';}
+  .circle_inbox {position: absolute; top: 6px;width: 198px; height: 198px; left: 6px; right: 10px; bottom: 10px; background: #fff; z-index:3; border-radius: 50%;}
+  .percent_text {position: absolute; margin-top: -19px; font-size: 60px; font-weight: 700; font-family: var(--title-font); color: #07ccec; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 3;}
+}
+.skill-img{
+  position: relative;
+  @include lg{
+    display: none;
+  }
+  img{
+    border-radius: 10px 10px 300px 10px;
+  }
+  .image{
+    position: absolute;
+    top: 64px;
+    left: -107px;
+    border-radius: 0;
+  }
+}
+
+
+@include ml {
+  .skill-wrap1 {
+    padding: 40px 60px 15px 60px;
+  }
+}
+
+
+@include  lg {
+  .d-xl-flex.skill-box .ripple-icon.mr-20 {
+    margin-right: 0;
+  }
+
+  .skill-box {
+    max-width: 250px;
+
+    &.text-xl-start {
+      .mr-30 {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include  md {
+  .skill-box {
+    max-width: 100%;
+
+    .text-xl-start {
+      .mr-30 {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@include xs {
+  .skill-wrap1 {
+    border-radius: 0;
+    padding: 40px 20px 15px 20px;
+  }
+}

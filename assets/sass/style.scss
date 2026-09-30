@@ -1,0 +1,241 @@
+/*
+Template Name: Medixi
+Template URL: https://html.vecurosoft.com/medixi
+Description: Medixi - Medical and Health Care HTML Template
+Author: Vecuro
+Author URI: https://themeforest.net/user/vecuro_themes
+Version: 1.0.0
+*/
+/*=================================
+    CSS Index Here
+==================================*/
+/*
+01. Theme Base
+    1.1. Variable
+    1.2. Mixin
+    1.3. Function
+    1.4. Typography
+    1.5. Extend
+02. Reset
+    2.1. Container
+    2.2. Grid
+    2.3. Input
+    2.4. Slick Slider
+    2.5. Mobile Menu
+    2.6. Date & Time Picker
+03. Utilities
+    3.1. Preloader
+    3.2. Buttons
+    3.3. Titles
+    3.4. Common
+    3.6. Font
+    3.7. Background
+    3.8. Text Color
+    3.9. Overlay
+    3.10. Animation
+    3.11. Flaticon
+04. Template Style
+    4.1. Widget
+    4.2. Header
+    4.3. Footer
+    4.4. Breadcumb
+    4.5. Popup Search
+    4.6. Popup Side Menu
+    4.7. Pagination
+    4.8. Blog
+    4.9. Comments
+    4.10. Hero Area
+    4.11. About
+    4.12. Services
+    4.13. Team
+    4.14. Form Style
+    4.15. Testimonial
+    4.16. Skill Area
+    4.17. Brand
+    4.18. Accordion
+    4.19. Project
+    4.20. Features
+    4.21. Contact
+    4.22. Woocommerce
+    4.23. Shop
+    4.24. Simple Sections
+    4.25. Event
+05. Spacing
+
+*/
+/*=================================
+    CSS Index End
+==================================*/
+
+
+/*=================================
+   01. Theme Base
+==================================*/
+/*------------------- 1.1. Variable-------------------*/
+@import 'base/variable';
+
+/*------------------- 1.2. Mixin -------------------*/
+@import 'base/mixin';
+
+/*------------------- 1.3. Function -------------------*/
+@import 'base/function';
+
+/*------------------- 1.4. Typography -------------------*/
+@import 'base/typography';
+
+/*------------------- 1.5. Extend -------------------*/
+@import 'base/extend';
+
+
+/*=================================
+    02. Reset
+==================================*/
+/*------------------- 2.1. Container -------------------*/
+@import 'reset/container';
+
+/*------------------- 2.2. Grid -------------------*/
+@import 'reset/grid';
+
+/*------------------- 2.3. Input -------------------*/
+@import 'reset/input';
+
+/*------------------- 2.4. Slick Slider -------------------*/
+@import 'reset/slick-slider';
+
+/*------------------- 2.5. Mobile Menu -------------------*/
+@import 'reset/vsmenu';
+
+/*------------------- 2.6. Date & Time Picker -------------------*/
+@import 'reset/datepicker';
+
+
+/*=================================
+    03. Utilities
+==================================*/
+/*------------------- 3.1. Preloader -------------------*/
+@import 'utilities/preloader';
+
+/*------------------- 3.2. Buttons -------------------*/
+@import 'utilities/btns';
+
+/*------------------- 3.3. Titles -------------------*/
+@import 'utilities/titles';
+
+/*------------------- 3.4. Common -------------------*/
+@import 'utilities/common';
+
+/*------------------- 3.6. Font -------------------*/
+@import 'utilities/font';
+
+/*------------------- 3.7. Background -------------------*/
+@import 'utilities/background';
+
+/*------------------- 3.8. Text Color -------------------*/
+@import 'utilities/text-color';
+
+/*------------------- 3.9. Overlay -------------------*/
+@import 'utilities/overlay';
+
+/*------------------- 3.10. Animation -------------------*/
+@import 'utilities/animation';
+
+/*------------------- 3.11. Flaticon -------------------*/
+@import 'utilities/flaticon';
+
+
+/*=================================
+    04. Template Style
+==================================*/
+/*------------------- 4.1. Widget  -------------------*/
+@import 'template/widgets/widget-default-list';
+@import 'template/widgets/widget-shopping-cart';
+@import 'template/widgets/widget-search';
+@import 'template/widgets/widget-tagcloud';
+@import 'template/widgets/widget-newsletter';
+@import 'template/widgets/widget-recent-post';
+@import 'template/widgets/widget-sidebar';
+@import 'template/widgets/widget-footer';
+
+
+/*------------------- 4.2. Header  -------------------*/
+@import 'template/headers/header-default';
+
+
+/*------------------- 4.3. Footer  -------------------*/
+@import 'template/footers/footer-v1';
+
+
+/*------------------- 4.4. Breadcumb  -------------------*/
+@import 'template/breadcumb/breadcumb-v1';
+
+
+/*------------------- 4.5. Popup Search  -------------------*/
+@import 'template/sections/popupsearch-v1';
+
+/*------------------- 4.6. Popup Side Menu  -------------------*/
+@import 'template/sections/sidemenu-v1';
+
+
+/*------------------- 4.7. Pagination  -------------------*/
+@import 'template/sections/pagination-v1';
+
+/*------------------- 4.8. Blog  -------------------*/
+@import 'template/sections/blog';
+
+/*------------------- 4.9. Comments  -------------------*/
+@import 'template/sections/comments-v1';
+
+/*------------------- 4.10. Hero Area  -------------------*/
+@import 'template/sections/hero-default';
+
+/*------------------- 4.11. About  -------------------*/
+@import 'template/sections/about';
+
+/*------------------- 4.12. Services  -------------------*/
+@import 'template/sections/service';
+
+/*------------------- 4.13. Team  -------------------*/
+@import 'template/sections/team';
+
+/*------------------- 4.14. Form Style  -------------------*/
+@import 'template/sections/form';
+
+/*------------------- 4.15. Testimonial  -------------------*/
+@import 'template/sections/testimonial';
+
+/*------------------- 4.16. Skill Area  -------------------*/
+@import 'template/sections/skill';
+
+/*------------------- 4.17. Brand  -------------------*/
+@import 'template/sections/brand';
+
+/*------------------- 4.18. Accordion  -------------------*/
+@import 'template/sections/accordion';
+
+/*------------------- 4.19. Project  -------------------*/
+@import 'template/sections/project';
+
+/*------------------- 4.20. Features  -------------------*/
+@import 'template/sections/features';
+
+/*------------------- 4.21. Contact  -------------------*/
+@import 'template/sections/contact';
+
+/*------------------- 4.22. Woocommerce  -------------------*/
+@import 'template/sections/woocommerce';
+
+/*------------------- 4.23. Shop  -------------------*/
+@import 'template/sections/shop';
+
+/*------------------- 4.24. Simple Sections -------------------*/
+@import 'template/sections/simple-sections';
+
+/*------------------- 4.25. Event -------------------*/
+@import 'template/sections/event';
+
+
+
+/*=================================
+    05. Spacing
+==================================*/
+@import 'spacing/spacing';

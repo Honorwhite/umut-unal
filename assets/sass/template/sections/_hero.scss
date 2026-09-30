@@ -1,0 +1,319 @@
+.ls-dots1 {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  text-align: left;
+  margin: 0 8px 0 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  .ls-dot-number {
+    font-size: 14px;
+    font-weight: 700;
+    color: $white-color;
+    display: block;
+    line-height: 1;
+    margin: 0 0 4px 0;
+  }
+
+  .ls-dot-shape {
+    width: 60px;
+    height: 10px;
+    border-bottom: 3px solid #D1D1D1;
+    display: inline-block;
+    line-height: 1;
+    transition: all ease 0.4s;
+  }
+
+  &.style2 {
+    .ls-dot-number {
+      color: $title-color;
+    }
+
+    .ls-dot-shape {
+      border-color: #555555;
+    }
+  }
+
+  &:hover,
+  &.active {
+    .ls-dot-shape {
+      background-color: $theme-color2;
+      border-color: transparent;
+    }
+  }
+
+}
+
+.ls-layer {
+  .ls-dots1 {
+    line-height: 0;
+  }
+
+  .icon-btn {
+    margin-right: 5px;
+    line-height: 58px;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+}
+
+.ls-btn-group .vs-btn {
+  margin-right: 15px;
+}
+
+.ls-video-box {
+  width: max-content;
+}
+
+.ls-box-img {
+  border: 2px solid $white-color; 
+  padding: 22px;
+  background-color: rgba(#FFFFFF, 0.70);
+  position: relative;
+  width: max-content;
+  margin: 0 0 18px 0;
+
+  .play-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    i {
+      --icon-size: 80px;
+      --icon-font-size: 20px;
+      outline: 2px solid $white-color;
+      outline-offset: -2px;
+    }
+
+    &::after,
+    &::before {
+      display: none;
+    }
+
+    &:hover {
+      i {
+        outline-color: $theme-color2;
+      }
+    }
+  }
+}
+
+.ls-video-caption {
+  font-size: 18px;
+  font-weight: 700;
+  color: $white-color;
+  max-width: 256px;
+  text-align: center;
+  margin: 0 auto;
+  white-space: normal;
+}
+
+
+// vs-hero-wrapper-four
+.vs-hero-wrapper-four{
+  background-size: cover;
+  @include lg{
+    padding: 160px 0 172px;
+  }
+  @include md {
+      margin-top: 90px;
+    padding: 100px 0;
+  }
+  @include xs {
+      padding: 80px 0;
+  }
+  
+}
+.hero-content4{
+  padding: 260px 0 272px;
+  @include lg{
+    padding: 0;
+  }
+  .hero-title{
+    font-size: 64px;
+    color: var(--white-color);
+    line-height: 74px;
+    margin-bottom: 45px;
+    @include ml{
+      font-size: 59px;
+    }
+    @include sm{
+      font-size: 48px;
+      line-height: 59px;
+    }
+    @include xs{
+      font-size: 32px;
+      line-height: 40px;
+    }
+    span{
+      position: relative;
+      color: var(--theme-color2);
+      &::before{
+        content: "";
+        position: absolute;
+        bottom: -23px;
+        left: 0;
+        width: 213px;
+        height: 18.303px;
+        background-image: url(../img/project/divider.png);
+      }
+    }
+  }
+  p{
+    font-size: 20px;
+    color: var(--white-color);
+    line-height: 30px;
+    margin-bottom: 38px;
+    @include xs{
+      br{
+        display: none;
+      }
+    }
+  }
+  .vs-btn{
+    padding: 21.5px 30px;
+    margin-right: 26px;
+    @include vxs {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+  .play-btn-two{
+    i{
+        border: 1px solid var(--theme-color1);
+        background: var(--white-color);
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color: var(--theme-color2);
+        display: inline-block;
+        border-radius: 50px;
+        margin-right: 2px;
+        transition: all 0.3s ease;
+    }
+    &:hover {
+      i {
+        background-color: var(--theme-color2);
+        color: #fff;
+      }
+    }
+    small{
+        font-size: 16px;
+        color: var(--white-color);
+        font-weight: 700;
+        font-family: var(--title-font);
+        text-transform: capitalize;
+    }
+}
+}
+
+.banner-slide-v4 {
+  .row {
+    align-items: center;
+  }
+  @include lg {
+    .hero-img {
+      display: none;
+    }
+  }
+}
+
+
+@media (min-width: $lg) {
+  .hero-layout3 {
+    margin-top: -45px;
+  }
+}
+
+
+@media (max-width: 1550px) {
+  .ls-layer {
+    .vs-btn {
+      padding: 22px 32px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .ls-video-caption {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ls-box-img {
+    max-width: 250px;
+    padding: 5px;
+
+    img {
+      width: 100%;
+    }
+
+    .play-btn {
+      i {
+        --icon-size: 66px;
+        --icon-font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .ls-layer {
+    .vs-btn {
+      padding: 17px 30px;
+      font-size: 14px;
+    }
+
+    .ls-btn-group {
+      .vs-btn {
+        padding: 17px 24px;
+      }
+    }
+  }
+
+  .watch-btn {
+    .btn-icon {
+      width: 40px;
+      height: 40px;
+      line-height: 39px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .ls-layer {
+    .vs-btn {
+      padding: 12px 20px;
+      font-size: 12px;
+    }
+
+    .ls-btn-group {
+      .vs-btn {
+        padding: 14px 16px;
+        margin-right: 7px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }    
+  }
+}
