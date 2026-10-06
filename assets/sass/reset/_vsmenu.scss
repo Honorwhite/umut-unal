@@ -15,6 +15,25 @@
     padding-bottom: 25px;
     padding-top: 40px;
     display: inline-block;
+    text-decoration: none;
+
+    h3,
+    a h3 {
+      color: $title-color !important;
+      font-weight: 700;
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+
+    small,
+    a small {
+      color: $theme-color !important;
+      font-weight: 700;
+      font-size: 13px;
+      display: block;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
   }
 
   // Menu Close Button
@@ -61,8 +80,8 @@
       top: 0;
       height: 100%;
       max-height: 122px;
-      background-color: $theme-color;
-      opacity: 0.1;
+      background-color: #f0f7fb;
+      border-bottom: 1px solid #e1eef6;
       z-index: -1;
     }
   }

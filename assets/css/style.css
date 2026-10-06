@@ -1,9 +1,4 @@
 /*
-Template Name: Medixi
-Template URL: https://html.vecurosoft.com/medixi
-Description: Medixi - Medical and Health Care HTML Template
-Author: Vecuro
-Author URI: https://themeforest.net/user/vecuro_themes
 Version: 1.0.0
 */
 /*=================================
@@ -1217,6 +1212,26 @@ textarea.form-control.is-invalid {
   padding-bottom: 25px;
   padding-top: 40px;
   display: inline-block;
+  text-decoration: none;
+}
+
+.vs-menu-wrapper .mobile-logo h3,
+.vs-menu-wrapper .mobile-logo a h3,
+.vs-menu-wrapper .mobile-logo h3 a {
+  color: var(--title-color, #0b2239) !important;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.vs-menu-wrapper .mobile-logo small,
+.vs-menu-wrapper .mobile-logo a small {
+  color: var(--theme-color, #00a2db) !important;
+  font-weight: 700;
+  font-size: 13px;
+  display: block;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .vs-menu-wrapper .vs-menu-toggle {
@@ -1265,8 +1280,8 @@ textarea.form-control.is-invalid {
   top: 0;
   height: 100%;
   max-height: 122px;
-  background-color: var(--theme-color);
-  opacity: 0.1;
+  background-color: #f0f7fb;
+  border-bottom: 1px solid #e1eef6;
   z-index: -1;
 }
 
@@ -21562,5 +21577,143 @@ body {
 @media (max-width: 767px) {
   .custom-top-space {
     padding-top: 204px;
+  }
+}
+
+/*------------------- Mobile Glass Bottom Navbar -------------------*/
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../fonts/fa-brands-400.eot);
+  src: url(../fonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/fa-brands-400.woff2) format("woff2"),
+    url(../fonts/fa-brands-400.woff) format("woff"),
+    url(../fonts/fa-brands-400.ttf) format("truetype"),
+    url(../fonts/fa-brands-400.svg#fontawesome) format("svg");
+}
+
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+.mobile-glass-nav {
+  position: fixed;
+  bottom: max(12px, env(safe-area-inset-bottom));
+  left: 14px;
+  right: 14px;
+  max-width: 420px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.60);
+  -webkit-backdrop-filter: blur(25px) saturate(190%);
+  backdrop-filter: blur(25px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-top: 1.5px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 36px rgba(11, 34, 57, 0.16), 0 2px 8px rgba(0, 0, 0, 0.04), inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+  border-radius: 26px;
+  z-index: 99998;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.3s ease;
+}
+
+@supports not ((-webkit-backdrop-filter: blur(25px)) or (backdrop-filter: blur(25px))) {
+  .mobile-glass-nav {
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 4px 20px rgba(11, 34, 57, 0.15);
+  }
+}
+
+.mobile-glass-nav .glass-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex: 1;
+  padding: 4px 6px;
+  border-radius: 18px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mobile-glass-nav .glass-nav-item:active {
+  transform: scale(0.93);
+}
+
+.mobile-glass-nav .glass-icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3px;
+  font-size: 17px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+/* Adres Box */
+.mobile-glass-nav .glass-icon-box.map-box {
+  background: rgba(0, 162, 219, 0.12);
+  color: #00a2db;
+}
+
+/* Telefon Box - Prominent center button */
+.mobile-glass-nav .glass-icon-box.call-box {
+  background: linear-gradient(135deg, #00a2db 0%, #0077b6 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 162, 219, 0.4);
+  width: 44px;
+  height: 44px;
+  margin-top: -6px;
+}
+
+/* Instagram Box */
+.mobile-glass-nav .glass-icon-box.insta-box {
+  background: rgba(225, 48, 108, 0.12);
+  color: #e1306c;
+}
+
+.mobile-glass-nav .glass-icon-box.insta-box svg {
+  display: block;
+}
+
+.mobile-glass-nav .glass-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0b2239;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+.mobile-glass-nav .glass-nav-item.active-call .glass-label {
+  color: #0077b6;
+  font-weight: 800;
+}
+
+/* Mobile viewport adjustments */
+@media (max-width: 991px) {
+  body {
+    padding-bottom: 78px !important;
+  }
+
+  .scrollToTop {
+    bottom: 85px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .mobile-glass-nav {
+    display: none !important;
   }
 }

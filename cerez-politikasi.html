@@ -20,8 +20,12 @@
         rel="stylesheet">
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Doc. Dr. Umut Ünal" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -46,6 +50,40 @@
                         stroke-width="2"></path>
                 </g>
             </svg>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html">
+                    <h3 class="text-title mb-0">Doç. Dr. Umut Ünal</h3>
+                    <small class="text-theme font-weight-bold">Üroloji Uzmanı</small>
+                </a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li><a href="index.html">Anasayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkında</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="hizmetlerimiz.html">Hizmetler</a>
+                        <ul class="sub-menu">
+                            <li><a href="tas-hastaliklari.html">Taş Hastalıkları</a></li>
+                            <li><a href="kanser-cerrahisi.html">Kanser Cerrahisi</a></li>
+                            <li><a href="cocuk-urolojisi.html">Çocuk Ürolojisi</a></li>
+                            <li><a href="holep.html">HoLEP (Lazer Prostat)</a></li>
+                            <li><a href="eswt.html">ESWT (Şok Dalga Tedavisi)</a></li>
+                            <li><a href="mikroskopik-varikoselektomi.html">Mikroskopik Varikoselektomi</a></li>
+                            <li><a href="robotik-ve-laparoskopik-cerrahi.html">Robotik ve Laparoskopik Cerrahi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="yorumlar.html">Hasta Yorumları</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -326,7 +364,10 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-auto">
-                        <p class="mb-0">© 2026 Doç. Dr. Umut Ünal - Üroloji Uzmanı. Tüm Hakları Saklıdır.</p>
+                        <p class="mb-0">© 2026 Doç. Dr. Umut Ünal - Üroloji Uzmanı. Tüm Hakları
+                            Saklıdır. <a href="https://www.jasmindigital.com.tr" target="_blank" class="text-black-50">|
+                                Jasmin
+                                Digital</a></p>
                     </div>
                     <div class="col-md-auto">
                         <ul class="list-inline mb-0 small">
@@ -341,6 +382,35 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile Glass Bottom Navbar -->
+    <div class="mobile-glass-nav d-lg-none" role="navigation" aria-label="Mobil Hızlı İletişim">
+        <a href="https://maps.app.goo.gl/REhoyiX5KBfDFQTEA" target="_blank" rel="noopener noreferrer"
+            class="glass-nav-item" id="mobile-dock-address">
+            <span class="glass-icon-box map-box">
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <span class="glass-label">Adres</span>
+        </a>
+        <a href="tel:03224552550" class="glass-nav-item active-call" id="mobile-dock-phone">
+            <span class="glass-icon-box call-box">
+                <i class="fas fa-phone-alt"></i>
+            </span>
+            <span class="glass-label">Telefon</span>
+        </a>
+        <a href="https://www.instagram.com/doc.dr.umutunal/" target="_blank" rel="noopener noreferrer"
+            class="glass-nav-item" id="mobile-dock-instagram">
+            <span class="glass-icon-box insta-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+            </span>
+            <span class="glass-label">Instagram</span>
+        </a>
+    </div>
 
     <!-- Scroll To Top -->
     <a href="#" class="scrollToTop scroll-bottom style2"><i class="fas fa-arrow-alt-up"></i></a>
